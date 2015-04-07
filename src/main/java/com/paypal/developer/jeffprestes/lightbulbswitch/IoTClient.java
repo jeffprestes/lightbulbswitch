@@ -172,7 +172,7 @@ public class IoTClient {
         
         System.out.println("Enabling GPIO " + gpioPort);
         final GpioController gpio = GpioFactory.getInstance();
-        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_02, "Motor", PinState.LOW);
+        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_04, "Relay", PinState.LOW);
         
         try {
             
